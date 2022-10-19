@@ -27,17 +27,17 @@ main{
 
 }
 section#login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
    background-color: #ffffff;
-   width: 250px;
-   height: 515px;
+   width: 270px;
+   height: 510px;
    border-radius: 20px;
-   transform: translate(-50%, -50%);
    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
    transition: width 0.3s, height 0.3s;
    transition-timing-function: ease;
+   transform: translate(-50%, -50%);
 
 }
 
@@ -54,7 +54,7 @@ section#login div#imagem {
 
 section#login > div#formulario{
     display: block;
-     padding: 10px;
+     padding: 5px;
 }
 
 div#formulario h1{
@@ -63,7 +63,8 @@ div#formulario h1{
 }
 
 div#formulario p{
-    font-size: 0.8em;
+    font-size: 1em;
+    margin: 5px 0px;
 }
 
 form div.campo{
@@ -71,7 +72,7 @@ form div.campo{
     display: block;
     border-radius: 5px;
     width: 100%;
-    height: 40px;
+    height: 35px;
     margin: 5px 0px;
 }
 
@@ -79,12 +80,23 @@ div.campo > label{
     display: none;
 }
 
-div.campo1{
+div.campo > i {
     color: white;
-       background-color:black ;
-    font-size: 2em;
-    width: 40px;
+   font-size: 2em;
+    width: 25px;
+    padding: 7.5px;
+}
+
+div.campo > input{
+    background-color: #6bc3da;
+    font-size: 1em;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
     padding: 5px;
+    transform: translateY(-12px);
+
 }
 
 form > input[type=submit]{
@@ -109,8 +121,8 @@ form > a.botao{
     font-size: 1em;
     width: 100%;
     height: 40px;
-    padding: 5px;
-    margin: 5px;
+    margin: 3px;
+    padding-bottom: 5px;
     background-color: white;
     color: #225755;
     border: 1px solid #225755;
